@@ -12,17 +12,12 @@ print("------------------- Challenge 1 -------------------")
    # Prompt the user to enter their age.
    # Write conditional statements that print out whether you can drive in your city. 
 
+age = input("Enter your age: ")
+print (age)
+print (type(age))
 
-
-
-
-
-
-
-
-
-
-
+if int(age) >= 16:
+   print ("You can drive!")
 
 # -------------------------------------------- 
 
@@ -32,9 +27,19 @@ print("------------------- Challenge 2 -------------------")
    # Write conditional statements that checks which is the highest and prints the highest score. 
    # Hint: Create three variables and assign them random scores. 
 
+score_one = 102
+score_two = 70
+score_three = 52
 
 
+if score_one:
+   print("Congratulations...you got the highest score")
 
+elif score_two:
+   print("Almost there...you got the second highest score")
+
+elif score_three:
+   print("Umm, you kind of suck...get better")
 
 
 
@@ -59,7 +64,11 @@ print("------------------- Challenge 3 -------------------")
 # Snowing: Wear gloves and a scarf 
 
 # Here's a variable to get you started:
+
 weather = "rainy"
+
+if weather is "rainy":
+   print("Get a rain coat")
 
 
 
@@ -106,9 +115,28 @@ print("------------------- Challenge 4 -------------------")
 # and print out the corresponding day of the week. 
 # Make sure to add a statement that accounts for any numbers out of range! 
 
+day = input("Enter the number of the week: ")
 
+if int(day) == 1:
+   print("Monday")
 
+elif int(day) == 2:
+   print("Tuesday")
 
+elif int(day) == 3:
+   print("Wendesday")
+
+elif int(day) == 4:
+   print("Thursday")
+
+elif int(day) == 5:
+   print("Friday")
+
+elif int(day) == 6:
+   print("Saturday")
+
+elif int(day) == 7:
+   print("Sunday")
 
 
 
