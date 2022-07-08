@@ -19,6 +19,8 @@ print (type(age))
 if int(age) >= 16:
    print ("You can drive!")
 
+if int(age) <= 16:
+   print("Ummmmm....I do not think you can drive!!!")
 # -------------------------------------------- 
 
 print("------------------- Challenge 2 -------------------") 
@@ -27,24 +29,18 @@ print("------------------- Challenge 2 -------------------")
    # Write conditional statements that checks which is the highest and prints the highest score. 
    # Hint: Create three variables and assign them random scores. 
 
-score_one = 102
-score_two = 70
-score_three = 52
+score = input("Enter the a score through 1-100 ")
+print (score)
+print (type(score))
 
+if int(score) >= 50:
+   print("Congratulations you got a score higher than 50!")
 
-if score_one:
-   print("Congratulations...you got the highest score")
+elif int(score) == 50:
+   print("You got just enough score in order to be second!")
 
-elif score_two:
-   print("Almost there...you got the second highest score")
-
-elif score_three:
-   print("Umm, you kind of suck...get better")
-
-
-
-
-
+elif int(score) <= 50:
+   print("Mannnnn you kinda suck, get a higher score next time!")
 
 
 # -------------------------------------------- 
@@ -65,21 +61,25 @@ print("------------------- Challenge 3 -------------------")
 
 # Here's a variable to get you started:
 
-weather = "rainy"
+weather = input("Input the weather that you are experiencing: ")
+print("Rainy")
+print("Sunny")
+print("Snowing")
 
-if weather is "rainy":
-   print("Get a rain coat")
+print(weather)
+print(type(weather))
 
+if int(weather)== "Rainy":
+   print("Bring an umbrella!")
 
+elif int(weather) == "Sunny":
+   print("Wear a hat and sunglasses!")
 
+elif int(weather) == "Snowing":
+   print("Wear gloves and a scarf!")
 
-
-
-
-
-
-
-
+else:
+   print("That is not a weather condition!")
 
 
 # Tip: Try changing the value of the weather variable to test your other conditions.
@@ -118,29 +118,25 @@ print("------------------- Challenge 4 -------------------")
 day = input("Enter the number of the week: ")
 
 if int(day) == 1:
-   print("Monday")
+   print("Today is Monday")
 
 elif int(day) == 2:
-   print("Tuesday")
+   print("Today is Tuesday")
 
 elif int(day) == 3:
-   print("Wendesday")
+   print("Today is Wendesday")
 
 elif int(day) == 4:
-   print("Thursday")
+   print("Today is Thursday")
 
 elif int(day) == 5:
-   print("Friday")
+   print("Today is Friday")
 
 elif int(day) == 6:
-   print("Saturday")
+   print("Today is Saturday")
 
 elif int(day) == 7:
-   print("Sunday")
-
-
-
-
+   print("Today is Sunday")
 
 
 

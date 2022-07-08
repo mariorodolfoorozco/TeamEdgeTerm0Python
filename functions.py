@@ -15,33 +15,57 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
+from operator import add
+from xmlrpc.client import Boolean
+
+
 print("------------------- Challenge 1 -------------------")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
 
+def print_message():
+	print("I can say anything I want")
+print_message()
 
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
+
+def print_five_messages():
+	print_message()
+	print_message()
+	print_message()
+	print_message()
+	print_message()
+
+
+print_five_messages()
 
 
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
 
+def get_user_input():
+	feedback = input("How many times would you like to print the message?: ")
+	if feedback == "1":
+		print_message()
+	elif feedback == "5":
+		print_five_messages()
+get_user_input()
 
-# **** Challenge 1: Problem 4 ****
+
+# **** Challenge 1: Problem 4/Problem 5/Probelm 6 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
 
-
-# **** Challenge 1: Problem 5 ****
-# Write a function called print_closing() that prints a goodbye message to the user.
-
-
-# **** Challenge 1: Problem 6 ****
-# Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
-# Remember! Use the functions that you've already made. Don't hardcode anything!
-
+def print_greeting():
+	greeting = input("Hello, I hope you are enojoying your stay (say 'Hello' or 'Goodbye') ")
+	if greeting == "Hello":
+		print("Um, why did you say hello...weirdo")
+	elif greeting == "Goodbye":
+		print("Already leaving so soon?")
+		
+print_greeting()
 
 
 # -------------------------------------------- 
@@ -65,9 +89,16 @@ print("------------------- Challenge 2 -------------------")
 
 # -------------------------------------------- 
 
+def sum(num1, num2):
+	sum = num1 + num2
+	if num1 == num2:
+		print(sum * 2)
+	else:
+		print(num1 + num2)
 
-
-
+	
+sum(3, 3)
+sum(3, 6)
 
 
 
@@ -86,6 +117,15 @@ print("------------------- Challenge 2 -------------------")
 
 # -------------------------------------------- 
 
+def makes_10(number1, number2):
+	makes_10 = number1 + number2
+	if number1 and number2 == 10:
+		print("True")
+
+number1 = 1
+number2 = 9
+
+makes_10()
 
 
 
@@ -138,9 +178,3 @@ print("------------------- Challenge 2 -------------------")
 
 
 
-
-
-
-
-
-# Make sure to test your code! Write a few function calls to make sure your code works!
