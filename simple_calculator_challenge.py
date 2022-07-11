@@ -27,71 +27,41 @@ print("My Simple Calculator")
 
 # -------------------------------------------- 
 
-# Write a function called add_numbers that will take two numbers and return the sum.
+# Sum
 
+def add_numbers(num1, num2): 
+	return num1 + num2
 
+sum = add_numbers(5, 6)
+print(sum)
+#_____________________________________________________________
 
+# Subraction
 
+def sub_numbers(num1,num2):
+	return num1-num2
 
+print(sub_numbers(5,6))
 
+#_____________________________________________________________
 
-# Write a function called sub_numbers that will take two numbers and return the difference.
+# Multiplication
 
+def multiply_numbers(num1, num2):
+	return num1 * num2
 
+print(multiply_numbers(4,4))
+#_____________________________________________________________
 
+# Division
 
+def divide_numbers(a,b):
+	answer = a/b
+	return answer
 
-# ------------
-# Testing Code - Uncomment the code below to test your code!
+print(divide_numbers (4,4))
 
-# check_answers(add_numbers(5, 15), 20)
-# check_answers(add_numbers(3, 18), 21)
-# check_answers(add_numbers(12, 28), 40)
-
-# check_answers(sub_numbers(18, 7), 11)
-# check_answers(sub_numbers(11, 9), 2)
-# check_answers(sub_numbers(18, 21), -3)
-
-# -------------------------------------------- 
-
-# Part 2: 
-
-	# Now that you have addition and subtraction down, let's add the other operators we learned!
-
-	# Finish off your basic calculator by writing the functions 
-	# for the following operations:
-
-		# Multiplication
-		# Division 
-
-# -------------------------------------------- 
-
-# Write a function called multiply_numbers that will take two numbers and return the product.
-
-
-
-
-
-
-# Write a function called divide_numbers that will take two numbers and return the quotient.
-
-
-
-
-
-
-# ------------
-# Testing Code - Uncomment the code below to test your code!
-
-# check_answers(multiply_numbers(10, 3), 30); 
-# check_answers(multiply_numbers(21, 7), 147);
-# check_answers(multiply_numbers(4, 16), 64); 
-
-# check_answers(divide_numbers(24, 100), `.24`);
-# check_answers(divide_numbers(21, 7), `3`);
-# check_answers(divide_numbers(15, 4), `3.75`);
-
-# -------------------------------------------- 
+# ____________________________________________________________
 
 # Part 3: 
 
@@ -101,12 +71,16 @@ print("My Simple Calculator")
 # Write a function that will prompt the user for the operation they want to call and the values they are inputting.
 
 # -------------------------------------------- 
+print("The Simple Calculator")
 
+print("Addition")
+print("Subtraction")
+print("Multiplication")
+print("Division")
 
+print(input("Choose which math you want to use "))
 
-
-
-
+user_number = input("type a #")
 
 
 
