@@ -1,3 +1,5 @@
+import random
+from urllib import response
 #********************************************************************
  #                                                                  
  #  Team Edge Mini-project: WHILE LOOP CHALLENGES
@@ -42,7 +44,8 @@ def test_prime(n):
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
 
-
+for i in range(0,100):
+  print(str(i) + " is prime? " + str(test_prime(i)))
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
 
@@ -51,7 +54,11 @@ items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" 
 
 #-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
 
+for i in items:
+  print("List of the items: " + i)
 
+if i == "key":
+  print("Found the key")
 
 print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 
@@ -104,7 +111,17 @@ print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 #         The user enters the answer. If wrong, keep prompting. If correct, say congrats!!
 #         Use this handy boolean to get you started! You will need input()!
 
-is_correct = False
+# while is_correct == False:
+#   random_number1 = random.randint(0,100)
+#   random_number2 = random.randint(0,100)
+#   user_input1 = input("Guess first number: ")
+#   user_input2 = input("Guess second number: ")
+#   if random_number1 == int(user_input1) and random_number2 == int(user_input2):
+#     print("You are correct!")
+#     is_correct = True
+#   else:
+#     print("Wrong numbers! Try again. ")
+
 
 
 print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
@@ -113,17 +130,18 @@ print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
 #         You are given two starter functions and a loop to get started! 
 #         Notice how one function calls the other and uses the returned value as the input. This is called Recursion! 
 
-keep_asking = False
+keep_asking = True
 
 def prompt_user():
-    pass
+  print("Hey, what do you think I am?")
+  response = input()
+  return response
 
 def response(response):
-    pass
+  print(f"I know you are {response}, but what am I?")
 
-while keep_asking:
-    #response(prompt_user())
-    pass
+while keep_asking == True:
+  response(prompt_user())
 
 #-->TODO: Challenge! write a secret word to break out of the loop!
 

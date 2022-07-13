@@ -1,5 +1,5 @@
 print("Lets get ready to go to school, Google High")
-name = input("What is the of the chracter you want on this journey?: ")
+name = input("What is the name of your chracter: ")
 print("\nWelcome " + name + ", ")
 print("Its the almost summer vaction...You start to notice how your grades are slipping. You have 3 classes that you need to pass in order to avoid summer school")
 print("\nMath, English, and Science...")
@@ -12,3 +12,4 @@ elif user_input == "No" or user_input == "no":
   print("Well too bad...Good luck " + name + " pass your quizzes!!!")
 else:
   print("I don't understand that...I'm guessing you meant yes " + name + ", good luck")
+

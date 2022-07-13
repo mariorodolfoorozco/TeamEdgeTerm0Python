@@ -26,7 +26,8 @@ for x in range(11):
 
 #-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
 
-
+for y in range(17):
+    print(f"Happy Birthday Mario!!!! Today you are {y} years old")
 
 print("------------------- CHALLENGE 2 : ITERATOR ----------------------")
 
@@ -38,11 +39,12 @@ for x in colors:
     print("The color is: " + x)
 
 #-->TODO: Declare a list with at least 5 animals. You provide the animals.
-animals = []
+animals = ['Hamsters', 'Hedgehogs', 'Elephants', 'Camelones', 'Lions']
 
 #-->TODO: Print all the animals in the array with a for loop. 
 
-
+for x in animals:
+    print(f"An animal that I want are {x}")
 
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
 
@@ -58,9 +60,22 @@ else:
 
 #-->TODO: Write a function that counts BACKWARDS from 100 and prints only even numbers
 
+def backward_counter():
+    for x in range(100,0,-2):
+        print(x)
+
+backward_counter()
 
 #-->TODO: Write a function that counts BACKWARDS from the given random number and prints only odd numbers
+new_list = []
 
+def backward_counter1():
+    for x in range(100,0, -2):
+        if(x % 2 != 0):
+            new_list.append(x)
+        print(x)
+
+backward_counter1()
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
 
@@ -73,7 +88,7 @@ else:
 
 #-->TODO Declare a list of any strings you  want: cities, friends, movies, etc.
 
-
+strings = ['Oakland']
 
 #-->TODO Write function to prompt the user to "Guess" if an element is present in your list. Store their response in a variable. 
 #   --> If their guess is in your list, print CONGRATULATIONS!
@@ -99,5 +114,10 @@ for color in colors:
 
 #-->TODO Write a function that prints every letter in a sentence that a user enters.
 
+user_input = input("What word do you want to put in?: ")
+# print(f"{user_input} has {len(user_input)} letters")
+
+for i in user_input:
+    print(i)
 
 #-->CHALLENGE: Let the user know which word is the shortest one!
